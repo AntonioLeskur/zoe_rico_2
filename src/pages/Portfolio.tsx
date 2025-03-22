@@ -55,7 +55,7 @@ export function Portfolio() {
       </section>
 
       {/* Logo Section */}
-      <section className="bg-white pt-24">
+      <section className="bg-white pt-16">
         <LogoCarousel />
       </section>
 
