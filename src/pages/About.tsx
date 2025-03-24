@@ -10,9 +10,9 @@ export function About() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Naša Priča</h1>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Naša priča</h1>
               <p className="text-base sm:text-xl text-neutral">
-                Od 2020. godine, Zoe Rico postavlja nove standarde u digitalnom marketingu. 
+                Od 2017. godine, Zoe Rico postavlja nove standarde u digitalnom marketingu. 
                 Naša strast je pomoći brendovima da ostvare svoj puni potencijal u digitalnom svijetu.
               </p>
             </div>
@@ -35,13 +35,13 @@ export function About() {
       {/* Values Section */}
       <section className="py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16 text-primary">Naše Vrijednosti</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16 text-primary">Naše vrijednosti</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="text-center">
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
                 <Users className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 text-primary">Timski Rad</h3>
+              <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-4 text-primary">Timski rad</h3>
               <p className="text-sm sm:text-base text-primary/70">Zajedno stvaramo izvanredne rezultate</p>
             </div>
             <div className="text-center">

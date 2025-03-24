@@ -66,6 +66,51 @@ export function LogoCarousel({ className = '' }: LogoCarouselProps) {
       id: 11,
       image: "/images/logo9-Photoroom.png",
       alt: "Logo 10"
+    },
+    {
+      id: 12,
+      image: "/images/acb7b703-c873-40b5-9575-3e2f5327d775_removalai_preview.png",
+      alt: "Client Logo 11"
+    },
+    {
+      id: 13,
+      image: "/images/fb9dfc5c-7e11-41c8-aa9a-53a7ed5ae716_removalai_preview.png",
+      alt: "Client Logo 12"
+    },
+    {
+      id: 14,
+      image: "/images/27bde604-52d5-4782-b44a-0ca7059f9a99_removalai_preview.png",
+      alt: "Client Logo 13"
+    },
+    {
+      id: 15,
+      image: "/images/521f3511-e5a9-4732-bbb0-fcbb166df5d5_removalai_preview.png",
+      alt: "Client Logo 14"
+    },
+    {
+      id: 17,
+      image: "/images/0be01fd7-fc6a-4266-b1da-f9957f942b39_removalai_preview.png",
+      alt: "Client Logo 16"
+    },
+    {
+      id: 18,
+      image: "/images/26a1a075-bb43-4cb8-a601-e0ebbb2101d0_removalai_preview.png",
+      alt: "Client Logo 17"
+    },
+    {
+      id: 19,
+      image: "/images/c5d8923b-98c0-48af-a348-73a7146c814b_removalai_preview.png",
+      alt: "Client Logo 18"
+    },
+    {
+      id: 20,
+      image: "/images/ffb1edcb-4d57-4b73-960c-dcacbabf1f7b_removalai_preview.png",
+      alt: "Client Logo 19"
+    },
+    {
+      id: 21,
+      image: "/images/4e4cadf2-e0b5-4534-a9aa-435834a1b47c_removalai_preview.png",
+      alt: "Client Logo 20"
     }
   ];
 

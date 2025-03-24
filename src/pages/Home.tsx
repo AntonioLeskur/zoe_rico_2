@@ -67,11 +67,11 @@ export function Home() {
       {/* Testimonials Section */}
       <section className="py-12 sm:py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16">Što Kažu Naši Klijenti</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16">Što kažu naši klijenti</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <TestimonialCard
               image="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&q=80"
-              name="Ana Kovačić"
+              name="Alen Kovačić"
               company="Lifestyle Brand"
               quote="Zoe Rico je transformirao našu prisutnost na društvenim mrežama. Rezultati su nadmašili sva očekivanja!"
             />
@@ -82,7 +82,7 @@ export function Home() {
               quote="Njihov pristup digitalnom marketingu je inovativan i učinkovit. Udvostručili smo naš online promet."
             />
             <TestimonialCard
-              image="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
+              image="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80"
               name="Petra Novak"
               company="Beauty Studio"
               quote="Profesionalan tim koji stvarno razumije digitalni marketing. Najbolja odluka za naš brend!"
@@ -94,36 +94,36 @@ export function Home() {
       {/* Services Section */}
       <section id="usluge" className="py-12 sm:py-20 bg-neutral/10">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16 text-primary">Naše Usluge</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16 text-primary">Naše usluge</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <ServiceCard 
               icon={<MessageSquare className="h-5 w-5" />}
-              title="Društveni Mediji"
+              title="Društveni mediji"
               description="Strategija i upravljanje društvenim mrežama za povećanje angažmana"
             />
             <ServiceCard 
               icon={<Instagram className="h-5 w-5" />}
-              title="Influencer Marketing"
+              title="Influencer marketing"
               description="Suradnja s utjecajnim osobama za autentičnu promociju"
             />
             <ServiceCard 
               icon={<Video className="h-5 w-5" />}
-              title="Kreiranje Sadržaja"
+              title="Kreiranje sadržaja"
               description="Profesionalni foto i video sadržaj koji privlači pažnju"
             />
             <ServiceCard 
               icon={<PenTool className="h-5 w-5" />}
-              title="Web Dizajn"
+              title="Web dizajn"
               description="Moderni i responzivni web dizajn prilagođen vašem brendu"
             />
             <ServiceCard 
               icon={<TrendingUp className="h-5 w-5" />}
-              title="Plaćeno Oglašavanje"
+              title="Plaćeno oglašavanje"
               description="Ciljano oglašavanje za maksimalni povrat investicije"
             />
             <ServiceCard 
               icon={<Monitor className="h-5 w-5" />}
-              title="Digitalna Strategija"
+              title="Digitalna strategija"
               description="Sveobuhvatna digitalna strategija za rast vašeg poslovanja"
             />
           </div>
@@ -135,13 +135,13 @@ export function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-primary">Kontaktirajte Nas</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-primary">Kontaktirajte nas</h2>
               <p className="text-sm sm:text-base text-primary/70 mb-6 sm:mb-8">
                 Spremni smo pomoći vam u ostvarenju vaših digitalnih ciljeva.
               </p>
               <div className="space-y-3">
-                <p className="text-sm sm:text-base text-primary/80">Email: info@zoerico.hr</p>
-                <p className="text-sm sm:text-base text-primary/80">Tel: +385 1 234 5678</p>
+                <p className="text-sm sm:text-base text-primary/80">Email: matea@zoerico.com</p>
+                <p className="text-sm sm:text-base text-primary/80">Tel: +385 97 764 7168</p>
                 <div className="flex space-x-4 mt-4 sm:mt-6">
                   <a href="https://www.facebook.com/share/1Eiiae1dwp/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
                     <Facebook className="h-5 w-5 sm:h-6 sm:w-6 text-primary hover:text-accent-blue transition-colors" />

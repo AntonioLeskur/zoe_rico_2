@@ -7,40 +7,40 @@ export function Portfolio() {
   const location = useLocation();
   const projects = [
     {
-      title: "Beauty Studio Bella",
+      title: "Flow Case",
       category: "Društveni Mediji",
-      image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80",
-      description: "Kompletno vođenje društvenih mreža i kreiranje sadržaja za poznati kozmetički salon."
+      image: "/images/portfolio/WhatsApp Image 2025-03-24 at 22.12.59_693f8939.jpg",
+      description: "Svaki nastup donosi jedinstvenu priču, a mi jedva čekamo proslaviti umjetnost u njenom najljepšem obliku."
     },
     {
-      title: "Tech Startup Hub",
-      category: "Web Dizajn",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
-      description: "Dizajn i razvoj moderne web platforme za tehnološki startup."
+      title: "b OPTIKA",
+      category: "Društveni Mediji",
+      image: "/images/portfolio/WhatsApp Image 2025-03-24 at 22.11.19_2ffcad4c.jpg",
+      description: "Široka ponuda visokokvalitetnih sunčanih i dioptrijskih naočala."
     },
     {
-      title: "Fitness Revolution",
-      category: "Influencer Marketing",
-      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80",
-      description: "Uspješna influencer kampanja za lanac fitness centara."
+      title: "Green&Clean",
+      category: "Web dizajn",
+      image: "/images/portfolio/web_green_clean.png",
+      description: "Profesionalne usluge čišćenja na otoku Korčuli. Dubinsko čišćenje tapeciranih površina i čišćenje ozonom."
     },
     {
-      title: "Organic Food Market",
-      category: "Content Creation",
-      image: "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&q=80",
-      description: "Kreiranje foto i video sadržaja za organic food trgovinu."
+      title: "The Goalkeeper Academy Zagreb",
+      category: "Društveni Mediji",
+      image: "/images/portfolio/WhatsApp Image 2025-03-24 at 22.05.04_2d2a7c14.jpg",
+      description: "Škola vratara ZG-Keepers osnovana je s ciljem da vratarima pružimo priliku za razvoj i usavršavanje specifičnih vratarskih znanja i sposobnosti."
     },
     {
-      title: "Fashion Brand Launch",
-      category: "Digitalna Strategija",
-      image: "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&q=80",
-      description: "Lansiranje nove modne marke kroz integrirani digitalni pristup."
+      title: "b OPTIKA",
+      category: "Društveni Mediji",
+      image: "/images/portfolio/WhatsApp Image 2025-03-24 at 21.33.07_caef43ed.jpg",
+      description: "Široka ponuda visokokvalitetnih sunčanih i dioptrijskih naočala."
     },
     {
-      title: "Restaurant Chain",
-      category: "Plaćeno Oglašavanje",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80",
-      description: "Uspješna Facebook i Instagram kampanja za lanac restorana."
+      title: "Baggizmo",
+      category: "Društveni Mediji",
+      image: "/images/portfolio/WhatsApp Image 2025-03-24 at 21.33.07_0af1d9f2.jpg",
+      description: "Baggizmo Wiseward pametni novčanik spaja praktičnost s naprednom sigurnošću."
     }
   ];
 
@@ -53,7 +53,7 @@ export function Portfolio() {
       {/* Hero Section */}
       <section className="py-12 sm:py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 sm:mb-6">Naši Projekti</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 sm:mb-6">Naši projekti</h1>
           <p className="text-sm sm:text-base md:text-xl text-neutral text-center max-w-3xl mx-auto">
             Pogledajte izbor naših najuspješnijih projekata koji pokazuju našu stručnost
             u različitim područjima digitalnog marketinga.

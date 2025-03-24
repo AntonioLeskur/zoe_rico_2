@@ -24,8 +24,8 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
             <ul className="space-y-2 text-neutral">
-              <li>info@zoerico.hr</li>
-              <li>+385 1 234 5678</li>
+              <li>matea@zoerico.com</li>
+              <li>+385 97 764 7168</li>
               <li>Zagreb, Hrvatska</li>
             </ul>
           </div>
