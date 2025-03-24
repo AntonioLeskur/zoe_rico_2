@@ -1,6 +1,7 @@
 import React from 'react';
-import { MessageSquare, Instagram, Facebook, Twitter, Monitor, TrendingUp, Video, PenTool, Star } from 'lucide-react';
+import { MessageSquare, Instagram, Facebook, Linkedin, Monitor, TrendingUp, Video, PenTool, Star } from 'lucide-react';
 import { LogoCarousel } from '../components/LogoCarousel';
+import { ContactForm } from '../components/ContactForm';
 
 function ServiceCard({ icon, title, description }) {
   return (
@@ -47,12 +48,9 @@ export function Home() {
                 <br />
                 Transformacija
               </h1>
-              <p className="text-base sm:text-xl text-primary/70 mb-6 sm:mb-8">
+              <p className="text-base sm:text-xl text-primary/70">
                 Pretvaramo vaše digitalne snove u stvarnost kroz inovativna marketinška rješenja.
               </p>
-              <button className="w-full sm:w-auto bg-accent-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-accent-blue/90 transition">
-                Započnimo suradnju
-              </button>
             </div>
             <div className="mt-8 sm:mt-0">
               <img 
@@ -145,32 +143,19 @@ export function Home() {
                 <p className="text-sm sm:text-base text-primary/80">Email: info@zoerico.hr</p>
                 <p className="text-sm sm:text-base text-primary/80">Tel: +385 1 234 5678</p>
                 <div className="flex space-x-4 mt-4 sm:mt-6">
-                  <Facebook className="h-5 w-5 sm:h-6 sm:w-6 text-primary hover:text-accent-blue transition-colors" />
-                  <Instagram className="h-5 w-5 sm:h-6 sm:w-6 text-primary hover:text-accent-blue transition-colors" />
-                  <Twitter className="h-5 w-5 sm:h-6 sm:w-6 text-primary hover:text-accent-blue transition-colors" />
+                  <a href="https://www.facebook.com/share/1Eiiae1dwp/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                    <Facebook className="h-5 w-5 sm:h-6 sm:w-6 text-primary hover:text-accent-blue transition-colors" />
+                  </a>
+                  <a href="https://www.instagram.com/zoeri.co/" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="h-5 w-5 sm:h-6 sm:w-6 text-primary hover:text-accent-blue transition-colors" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/matea-jukic-a2425181/" target="_blank" rel="noopener noreferrer">
+                    <Linkedin className="h-5 w-5 sm:h-6 sm:w-6 text-primary hover:text-accent-blue transition-colors" />
+                  </a>
                 </div>
               </div>
             </div>
-            <form className="space-y-4 sm:space-y-6">
-              <input
-                type="text"
-                placeholder="Vaše ime"
-                className="w-full px-4 py-2 sm:py-3 border border-neutral rounded-lg text-sm sm:text-base focus:border-accent-blue focus:ring-1 focus:ring-accent-blue outline-none"
-              />
-              <input
-                type="email"
-                placeholder="Email adresa"
-                className="w-full px-4 py-2 sm:py-3 border border-neutral rounded-lg text-sm sm:text-base focus:border-accent-blue focus:ring-1 focus:ring-accent-blue outline-none"
-              />
-              <textarea
-                placeholder="Vaša poruka"
-                rows={4}
-                className="w-full px-4 py-2 sm:py-3 border border-neutral rounded-lg text-sm sm:text-base focus:border-accent-blue focus:ring-1 focus:ring-accent-blue outline-none"
-              ></textarea>
-              <button className="w-full bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-primary/90 transition text-sm sm:text-base">
-                Pošalji Poruku
-              </button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>

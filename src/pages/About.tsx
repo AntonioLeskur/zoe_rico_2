@@ -69,47 +69,15 @@ export function About() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-12 sm:py-20 bg-neutral/10">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16 text-primary">Naš Tim</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-neutral/20">
-              <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
-                alt="CEO"
-                className="w-full h-48 sm:h-64 object-cover rounded-xl mb-4 sm:mb-6"
-              />
-              <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2 text-primary">Marko Kovač</h3>
-              <p className="text-sm sm:text-base text-accent-blue mb-3 sm:mb-4">CEO & Osnivač</p>
-              <p className="text-sm sm:text-base text-primary/70">
-                15+ godina iskustva u digitalnom marketingu i razvoju poslovanja.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-neutral/20">
-              <img 
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80"
-                alt="Creative Director"
-                className="w-full h-48 sm:h-64 object-cover rounded-xl mb-4 sm:mb-6"
-              />
-              <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2 text-primary">Ana Jurić</h3>
-              <p className="text-sm sm:text-base text-accent-blue mb-3 sm:mb-4">Kreativna Direktorica</p>
-              <p className="text-sm sm:text-base text-primary/70">
-                Stručnjakinja za brendiranje i vizualni identitet.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-neutral/20">
-              <img 
-                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80"
-                alt="Technical Lead"
-                className="w-full h-48 sm:h-64 object-cover rounded-xl mb-4 sm:mb-6"
-              />
-              <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2 text-primary">Ivan Horvat</h3>
-              <p className="text-sm sm:text-base text-accent-blue mb-3 sm:mb-4">Tehnički Voditelj</p>
-              <p className="text-sm sm:text-base text-primary/70">
-                Ekspert za web razvoj i digitalna rješenja.
-              </p>
-            </div>
+      {/* Matea Section */}
+      <section className="bg-neutral/10">
+        <div className="max-w-7xl mx-auto px-4 pb-8">
+          <div className="flex justify-center">
+            <img 
+              src="/images/matea/matea_ceo.png"
+              alt="Matea Zoe Rico"
+              className="w-1/2 h-auto rounded-2xl"
+            />
           </div>
         </div>
       </section>

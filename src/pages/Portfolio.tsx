@@ -1,7 +1,10 @@
 import React from 'react';
 import { LogoCarousel } from '../components/LogoCarousel';
+import { scrollToSection } from '../utils/scroll';
+import { useLocation } from 'react-router-dom';
 
 export function Portfolio() {
+  const location = useLocation();
   const projects = [
     {
       title: "Beauty Studio Bella",
@@ -40,6 +43,10 @@ export function Portfolio() {
       description: "Uspješna Facebook i Instagram kampanja za lanac restorana."
     }
   ];
+
+  const handleContactClick = () => {
+    scrollToSection('kontakt', location.pathname);
+  };
 
   return (
     <div className="pt-16">
@@ -88,7 +95,10 @@ export function Portfolio() {
           <p className="text-sm sm:text-base md:text-xl text-primary/70 mb-6 sm:mb-8 max-w-2xl mx-auto">
             Dopustite nam da i vaš brend transformiramo u digitalnu uspješnicu.
           </p>
-          <button className="w-full sm:w-auto bg-accent-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-accent-blue/90 transition text-sm sm:text-base">
+          <button 
+            onClick={handleContactClick}
+            className="w-full sm:w-auto bg-accent-blue text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-accent-blue/90 transition text-sm sm:text-base"
+          >
             Kontaktirajte nas
           </button>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -32,9 +32,15 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Pratite Nas</h4>
             <div className="flex space-x-4">
-              <Facebook className="h-6 w-6 text-neutral hover:text-accent-blue transition-colors" />
-              <Instagram className="h-6 w-6 text-neutral hover:text-accent-blue transition-colors" />
-              <Twitter className="h-6 w-6 text-neutral hover:text-accent-blue transition-colors" />
+              <a href="https://www.facebook.com/share/1Eiiae1dwp/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+                <Facebook className="h-6 w-6 text-neutral hover:text-accent-blue transition-colors" />
+              </a>
+              <a href="https://www.instagram.com/zoeri.co/" target="_blank" rel="noopener noreferrer">
+                <Instagram className="h-6 w-6 text-neutral hover:text-accent-blue transition-colors" />
+              </a>
+              <a href="https://www.linkedin.com/in/matea-jukic-a2425181/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-6 w-6 text-neutral hover:text-accent-blue transition-colors" />
+              </a>
             </div>
           </div>
         </div>

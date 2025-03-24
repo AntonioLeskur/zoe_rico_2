@@ -69,58 +69,58 @@ export function LogoCarousel({ className = '' }: LogoCarouselProps) {
     }
   ];
 
-  const [items, setItems] = useState(logos);
+  // Create a duplicated array of logos for seamless scrolling
+  const [items, setItems] = useState([...logos, ...logos]);
   const containerRef = useRef<HTMLDivElement>(null);
   const [translateX, setTranslateX] = useState(0);
+  const animationRef = useRef<number>();
+  const lastTimeRef = useRef<number>(0);
+  const speedRef = useRef<number>(30); // Reduced speed for smoother scrolling
 
   useEffect(() => {
-    const itemWidth = 192; // 160px width + 32px gap
-    const animationDuration = 300000; // Increased to 300 seconds (5 minutes) for slower movement
-    let animationFrameId: number;
-    let lastTimestamp: number;
+    const animate = (currentTime: number) => {
+      if (!lastTimeRef.current) {
+        lastTimeRef.current = currentTime;
+      }
 
-    const animate = (timestamp: number) => {
-      if (!lastTimestamp) lastTimestamp = timestamp;
-      const progress = timestamp - lastTimestamp;
-      
-      setTranslateX(prev => {
-        const newTranslate = prev - (progress / animationDuration) * itemWidth;
-        
-        // When first logo moves completely out of view
-        if (newTranslate <= -itemWidth) {
-          // Reset position and move first item to end
-          lastTimestamp = timestamp;
-          setItems(currentItems => {
-            const [first, ...rest] = currentItems;
-            return [...rest, first];
-          });
-          return 0;
+      const deltaTime = currentTime - lastTimeRef.current;
+      lastTimeRef.current = currentTime;
+
+      setTranslateX(prevTranslateX => {
+        const newTranslateX = prevTranslateX - (deltaTime * speedRef.current) / 1000;
+        const itemWidth = 192; // 160px width + 32px gap
+        const totalWidth = itemWidth * logos.length;
+
+        // When we've scrolled through half of the items
+        if (Math.abs(newTranslateX) >= totalWidth) {
+          return 0; // Reset to beginning without visual jump
         }
-        
-        return newTranslate;
+
+        return newTranslateX;
       });
 
-      animationFrameId = requestAnimationFrame(animate);
+      animationRef.current = requestAnimationFrame(animate);
     };
 
-    animationFrameId = requestAnimationFrame(animate);
+    animationRef.current = requestAnimationFrame(animate);
 
     return () => {
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId);
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
       }
     };
-  }, []);
+  }, [logos.length]);
 
   return (
     <div className={`w-full overflow-hidden ${className}`}>
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="w-full">
         <div 
           ref={containerRef}
           className="flex items-center gap-8"
           style={{
             transform: `translateX(${translateX}px)`,
-            width: 'fit-content'
+            width: 'fit-content',
+            willChange: 'transform'
           }}
         >
           {items.map((logo, index) => (
