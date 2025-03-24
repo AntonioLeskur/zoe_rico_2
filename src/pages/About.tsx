@@ -70,7 +70,7 @@ export function About() {
       </section>
 
       {/* Matea Section */}
-      <section className="bg-neutral/10">
+      <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 pb-8">
           <div className="flex justify-center">
             <img 
