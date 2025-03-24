@@ -44,6 +44,29 @@ export function Portfolio() {
     }
   ];
 
+  const clientLogos = [
+    "/images/logo_.png",
+    "/images/logo_1.png",
+    "/images/logo1-Photoroom.png",
+    "/images/logo2-Photoroom.png",
+    "/images/logo3-Photoroom.png",
+    "/images/logo4-Photoroom.png",
+    "/images/logo5-Photoroom.png",
+    "/images/logo6-Photoroom.png",
+    "/images/logo7-Photoroom.png",
+    "/images/logo8-Photoroom.png",
+    "/images/logo9-Photoroom.png",
+    "/images/acb7b703-c873-40b5-9575-3e2f5327d775_removalai_preview.png",
+    "/images/fb9dfc5c-7e11-41c8-aa9a-53a7ed5ae716_removalai_preview.png",
+    "/images/27bde604-52d5-4782-b44a-0ca7059f9a99_removalai_preview.png",
+    "/images/521f3511-e5a9-4732-bbb0-fcbb166df5d5_removalai_preview.png",
+    "/images/0be01fd7-fc6a-4266-b1da-f9957f942b39_removalai_preview.png",
+    "/images/26a1a075-bb43-4cb8-a601-e0ebbb2101d0_removalai_preview.png",
+    "/images/c5d8923b-98c0-48af-a348-73a7146c814b_removalai_preview.png",
+    "/images/ffb1edcb-4d57-4b73-960c-dcacbabf1f7b_removalai_preview.png",
+    "/images/4e4cadf2-e0b5-4534-a9aa-435834a1b47c_removalai_preview.png"
+  ];
+
   const handleContactClick = () => {
     scrollToSection('kontakt', location.pathname);
   };
@@ -82,6 +105,27 @@ export function Portfolio() {
                   <h3 className="text-base sm:text-xl font-bold text-white mb-1 sm:mb-2">{project.title}</h3>
                   <p className="text-xs sm:text-sm text-neutral">{project.description}</p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Client Logos Grid */}
+      <section className="py-12 sm:py-20 bg-neutral/5">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-primary">Naši Klijenti</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
+            {clientLogos.map((logo, index) => (
+              <div 
+                key={index} 
+                className="aspect-square bg-white rounded-lg p-4 flex items-center justify-center border border-neutral/10 hover:border-neutral/30 transition-colors"
+              >
+                <img 
+                  src={logo}
+                  alt={`Client Logo ${index + 1}`}
+                  className="w-full h-full object-contain filter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                />
               </div>
             ))}
           </div>

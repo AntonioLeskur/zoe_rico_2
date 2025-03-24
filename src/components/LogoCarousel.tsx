@@ -133,7 +133,7 @@ export function LogoCarousel({ className = '' }: LogoCarouselProps) {
 
       setTranslateX(prevTranslateX => {
         const newTranslateX = prevTranslateX - (deltaTime * speedRef.current) / 1000;
-        const itemWidth = 192; // 160px width + 32px gap
+        const itemWidth = 160; // Reduced from 192 to bring logos closer on mobile
         const totalWidth = itemWidth * logos.length;
 
         // When we've scrolled through half of the items
@@ -161,7 +161,7 @@ export function LogoCarousel({ className = '' }: LogoCarouselProps) {
       <div className="w-full">
         <div 
           ref={containerRef}
-          className="flex items-center gap-8"
+          className="flex items-center gap-4 sm:gap-8"
           style={{
             transform: `translateX(${translateX}px)`,
             width: 'fit-content',
@@ -171,7 +171,7 @@ export function LogoCarousel({ className = '' }: LogoCarouselProps) {
           {items.map((logo, index) => (
             <div
               key={`${logo.id}-${index}`}
-              className="flex-shrink-0 w-40 h-24 flex items-center justify-center p-4"
+              className="flex-shrink-0 w-32 sm:w-40 h-20 sm:h-24 flex items-center justify-center p-2 sm:p-4"
             >
               <img 
                 src={logo.image} 
