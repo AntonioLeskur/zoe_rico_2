@@ -15,9 +15,9 @@ function ServiceCard({ icon, title, description }) {
   );
 }
 
-function TestimonialCard({ image, name, company, quote }) {
-  return (
-    <div className="bg-primary p-6 sm:p-8 rounded-2xl">
+function TestimonialCard({ image, name, company, quote, companyUrl = null }) {
+  const content = (
+    <>
       <div className="flex items-center space-x-1 mb-3">
         {[...Array(5)].map((_, i) => (
           <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-accent-gold fill-current" />
@@ -31,6 +31,25 @@ function TestimonialCard({ image, name, company, quote }) {
           <p className="text-neutral text-xs sm:text-sm">{company}</p>
         </div>
       </div>
+    </>
+  );
+
+  if (companyUrl) {
+    return (
+      <a 
+        href={companyUrl} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="block bg-primary p-6 sm:p-8 rounded-2xl transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:bg-primary/95 hover:ring-2 hover:ring-accent-blue/20"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <div className="bg-primary p-6 sm:p-8 rounded-2xl">
+      {content}
     </div>
   );
 }
@@ -83,9 +102,10 @@ export function Home() {
             />
             <TestimonialCard
               image="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80"
-              name="Petra Novak"
-              company="Beauty Studio"
-              quote="Profesionalan tim koji stvarno razumije digitalni marketing. Najbolja odluka za naš brend!"
+              name="Maja Šeparović"
+              company="Green&Clean"
+              companyUrl="https://www.green-clean.team/"
+              quote="Odlična usluga i fantastičan tim! Stranica je izrađena brzo, točno prema mojim uputama, a krajnji rezultat je čak i bolji od očekivanog. Komunikacija s timom bila je iznimno ugodna i profesionalna – uvijek dostupni za pitanja i sugestije. Preporučujem svima koji žele kvalitetan i pouzdan web! 👏🔥"
             />
           </div>
         </div>
