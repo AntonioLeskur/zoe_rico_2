@@ -71,12 +71,12 @@ export function About() {
 
       {/* Matea Section */}
       <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 pb-8">
+        <div className="max-w-7xl mx-auto sm:px-4 pb-8">
           <div className="flex justify-center">
             <img 
               src="/images/matea/matea_ceo.png"
               alt="Matea Zoe Rico"
-              className="w-1/2 h-auto rounded-2xl"
+              className="w-full sm:w-1/2 h-auto sm:rounded-2xl"
             />
           </div>
         </div>
