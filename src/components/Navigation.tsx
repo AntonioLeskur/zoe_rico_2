@@ -48,7 +48,13 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <a href="/" onClick={handleLogoClick} className="text-2xl font-bold text-primary hover:text-primary/90 transition-colors">ZOE RICO</a>
+            <a href="/" onClick={handleLogoClick} className="hover:opacity-90 transition-opacity">
+              <img 
+                src="/images/zoe_rico_logo/zoe_rico_share_logo.png" 
+                alt="Zoe Rico" 
+                className="h-8"
+              />
+            </a>
           </div>
           
           {/* Desktop Navigation */}

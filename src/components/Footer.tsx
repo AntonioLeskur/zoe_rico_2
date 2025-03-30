@@ -22,7 +22,13 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">ZOE RICO</h3>
+            <div className="mb-4">
+              <img 
+                src="/images/zoe_rico_logo/zoe_rico_share_logo.png" 
+                alt="Zoe Rico" 
+                className="h-8 brightness-0 invert"
+              />
+            </div>
             <p className="text-neutral">
               Vaš partner u digitalnoj transformaciji
             </p>
