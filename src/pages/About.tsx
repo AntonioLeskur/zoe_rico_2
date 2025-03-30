@@ -70,14 +70,23 @@ export function About() {
       </section>
 
       {/* Matea Section */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto sm:px-4 pb-8">
-          <div className="flex justify-center">
-            <img 
-              src="/images/matea/matea_ceo.png"
-              alt="Matea Zoe Rico"
-              className="w-full sm:w-1/2 h-auto sm:rounded-2xl"
-            />
+      <section className="bg-white pb-8">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 max-w-4xl mx-auto">
+            <div className="w-48 flex flex-col items-center">
+              <img 
+                src="/images/matea/matea_solo_img.jpg"
+                alt="Matea Jukić"
+                className="w-full rounded-2xl"
+              />
+              <div className="mt-4 text-center">
+                <h3 className="text-xl font-bold text-primary">Matea Jukić</h3>
+                <p className="text-primary/70">MBA Marketing</p>
+              </div>
+            </div>
+            <div className="flex-1 text-lg text-primary/80 leading-relaxed mt-4 md:mt-12">
+              Većina ljudi danas je na mobitelima i računalima, a digitalni trag ključan je za svaki brend. Zato volim stvarati sadržaj koji privlači pažnju, gradi prepoznatljivost i stvara lojalnu mrežu klijenata
+            </div>
           </div>
         </div>
       </section>

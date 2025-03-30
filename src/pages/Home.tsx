@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, Instagram, Facebook, Linkedin, Monitor, TrendingUp, Video, PenTool, Star } from 'lucide-react';
+import { MessageSquare, Instagram, Facebook, Linkedin, Monitor, TrendingUp, Video, PenTool, Star, Users, Clock, MessageCircle, BarChart3, Sparkles, Heart } from 'lucide-react';
 import { LogoCarousel } from '../components/LogoCarousel';
 import { ContactForm } from '../components/ContactForm';
 
@@ -17,21 +17,21 @@ function ServiceCard({ icon, title, description }) {
 
 function TestimonialCard({ image, name, company, quote, companyUrl = null }) {
   const content = (
-    <>
+    <div className="h-full flex flex-col">
       <div className="flex items-center space-x-1 mb-3">
         {[...Array(5)].map((_, i) => (
           <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-accent-gold fill-current" />
         ))}
       </div>
-      <p className="text-sm sm:text-base text-neutral mb-4 sm:mb-6">{quote}</p>
-      <div className="flex items-center space-x-3">
+      <p className="text-sm sm:text-base text-neutral flex-grow">{quote}</p>
+      <div className="flex items-center space-x-3 mt-4">
         <img src={image} alt={name} className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover" />
         <div>
           <h4 className="font-semibold text-sm sm:text-base text-white">{name}</h4>
           <p className="text-neutral text-xs sm:text-sm">{company}</p>
         </div>
       </div>
-    </>
+    </div>
   );
 
   if (companyUrl) {
@@ -40,7 +40,7 @@ function TestimonialCard({ image, name, company, quote, companyUrl = null }) {
         href={companyUrl} 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="block bg-primary p-6 sm:p-8 rounded-2xl transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:bg-primary/95 hover:ring-2 hover:ring-accent-blue/20"
+        className="block bg-primary p-6 sm:p-8 rounded-2xl transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:bg-primary/95 hover:ring-2 hover:ring-accent-blue/20 h-full"
       >
         {content}
       </a>
@@ -48,7 +48,7 @@ function TestimonialCard({ image, name, company, quote, companyUrl = null }) {
   }
 
   return (
-    <div className="bg-primary p-6 sm:p-8 rounded-2xl">
+    <div className="bg-primary p-6 sm:p-8 rounded-2xl h-full">
       {content}
     </div>
   );
@@ -97,7 +97,7 @@ export function Home() {
             />
             <TestimonialCard
               image="/images/clients/naklada_cvrcak_pic.png"
-              name="NAKLADA CVRČAK"
+              name="Naklada Cvrčak"
               company="NAKLADA CVRČAK"
               companyUrl="https://www.facebook.com/nakladacvrcak"
               quote="S tvrtkom Zoe Rico poslujemo dugi niz godina i uvijek smo iznimno zadovoljni suradnjom! Profesionalnost, kvaliteta i pouzdanost na najvišoj razini. Preporučujemo ih svima!"
@@ -105,7 +105,7 @@ export function Home() {
             <TestimonialCard
               image="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80"
               name="Maja Šeparović"
-              company="Green&Clean"
+              company="GREEN&CLEAN"
               companyUrl="https://www.green-clean.team/"
               quote="Odlična usluga i fantastičan tim! Stranica je izrađena brzo, točno prema mojim uputama, a krajnji rezultat je čak i bolji od očekivanog. Komunikacija s timom bila je iznimno ugodna i profesionalna – uvijek dostupni za pitanja i sugestije. Preporučujem svima koji žele kvalitetan i pouzdan web! 👏🔥"
             />
@@ -155,33 +155,53 @@ export function Home() {
       {/* Why Choose Agency Section */}
       <section className="py-12 sm:py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4">
-          <article className="max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16">
-              Zašto odabrati agenciju?
-            </h2>
-            <ul className="space-y-6 text-center list-none">
-              <li className="text-base sm:text-xl">
-                <span className="text-white font-bold">Stručnost i iskustvo</span>
-                <span className="text-neutral"> u optimizaciji kampanja</span>
-              </li>
-              <li className="text-base sm:text-xl">
-                <span className="text-white font-bold">Ušteda vremena</span>
-                <span className="text-neutral"> za vaše ključne aktivnosti</span>
-              </li>
-              <li className="text-base sm:text-xl">
-                <span className="text-white font-bold">Konzistentna komunikacija</span>
-                <span className="text-neutral"> koja gradi vaš brend</span>
-              </li>
-              <li className="text-base sm:text-xl">
-                <span className="text-white font-bold">Napredna analitika</span>
-                <span className="text-neutral"> za mjerljive rezultate</span>
-              </li>
-              <li className="text-base sm:text-xl">
-                <span className="text-white font-bold">Kreativna rješenja</span>
-                <span className="text-neutral"> koja vas izdvajaju</span>
-              </li>
-            </ul>
-          </article>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16">
+            Zašto odabrati agenciju?
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
+                <Users className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Stručnost i iskustvo</h3>
+              <p className="text-neutral">Optimiziramo kampanje s dokazanim rezultatima</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
+                <Clock className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Ušteda vremena</h3>
+              <p className="text-neutral">Fokusirajte se na rast vašeg poslovanja</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
+                <MessageCircle className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Konzistentna komunikacija</h3>
+              <p className="text-neutral">Gradimo prepoznatljiv identitet brenda</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
+                <BarChart3 className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Napredna analitika</h3>
+              <p className="text-neutral">Pratimo i optimiziramo svaki aspekt</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
+                <Sparkles className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Kreativna rješenja</h3>
+              <p className="text-neutral">Jedinstveni pristup vašem brendu</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
+                <Heart className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Veća angažiranost</h3>
+              <p className="text-neutral">Stvaramo sadržaj koji povezuje i inspirira</p>
+            </div>
+          </div>
         </div>
       </section>
 
