@@ -89,16 +89,18 @@ export function Home() {
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16">Što kažu naši klijenti</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <TestimonialCard
-              image="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&q=80"
-              name="Alen Kovačić"
-              company="Lifestyle Brand"
-              quote="Zoe Rico je transformirao našu prisutnost na društvenim mrežama. Rezultati su nadmašili sva očekivanja!"
+              image="/images/clients/marta_flow_case.jpg"
+              name="Marta Špoljarić"
+              company="FLOW CASE"
+              companyUrl="https://www.instagram.com/flowcase.hr/"
+              quote="Sa Zoe Rico je suradnja uvijek jednostavna i brza! Dogovor je lak, komunikacija odlična, a usluga vrhunska. Preporučujem!"
             />
             <TestimonialCard
-              image="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80"
-              name="Marko Horvat"
-              company="Tech Startup"
-              quote="Njihov pristup digitalnom marketingu je inovativan i učinkovit. Udvostručili smo naš online promet."
+              image="/images/clients/naklada_cvrcak_pic.png"
+              name="NAKLADA CVRČAK"
+              company="NAKLADA CVRČAK"
+              companyUrl="https://www.facebook.com/nakladacvrcak"
+              quote="S tvrtkom Zoe Rico poslujemo dugi niz godina i uvijek smo iznimno zadovoljni suradnjom! Profesionalnost, kvaliteta i pouzdanost na najvišoj razini. Preporučujemo ih svima!"
             />
             <TestimonialCard
               image="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80"
@@ -147,6 +149,39 @@ export function Home() {
               description="Sveobuhvatna digitalna strategija za rast vašeg poslovanja"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Why Choose Agency Section */}
+      <section className="py-12 sm:py-20 bg-primary text-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <article className="max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16">
+              Zašto odabrati agenciju?
+            </h2>
+            <ul className="space-y-6 text-center list-none">
+              <li className="text-base sm:text-xl">
+                <span className="text-white font-bold">Stručnost i iskustvo</span>
+                <span className="text-neutral"> u optimizaciji kampanja</span>
+              </li>
+              <li className="text-base sm:text-xl">
+                <span className="text-white font-bold">Ušteda vremena</span>
+                <span className="text-neutral"> za vaše ključne aktivnosti</span>
+              </li>
+              <li className="text-base sm:text-xl">
+                <span className="text-white font-bold">Konzistentna komunikacija</span>
+                <span className="text-neutral"> koja gradi vaš brend</span>
+              </li>
+              <li className="text-base sm:text-xl">
+                <span className="text-white font-bold">Napredna analitika</span>
+                <span className="text-neutral"> za mjerljive rezultate</span>
+              </li>
+              <li className="text-base sm:text-xl">
+                <span className="text-white font-bold">Kreativna rješenja</span>
+                <span className="text-neutral"> koja vas izdvajaju</span>
+              </li>
+            </ul>
+          </article>
         </div>
       </section>
 
