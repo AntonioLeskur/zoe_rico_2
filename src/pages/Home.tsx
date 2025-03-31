@@ -6,10 +6,10 @@ import { ContactForm } from '../components/ContactForm';
 function ServiceCard({ icon, title, description }) {
   return (
     <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-neutral/20">
-      <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center mb-4">
+      <div className="w-12 h-12 bg-gradient-to-br from-accent-gold to-accent-gold/80 text-primary rounded-full flex items-center justify-center mb-4">
         {icon}
       </div>
-      <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">{title}</h3>
+      <h3 className="text-lg sm:text-xl font-bold mb-3 bg-gradient-to-r from-primary to-accent-blue bg-clip-text text-transparent">{title}</h3>
       <p className="text-sm sm:text-base text-primary/70">{description}</p>
     </div>
   );
@@ -93,14 +93,14 @@ export function Home() {
               name="Marta Špoljarić"
               company="FLOW CASE"
               companyUrl="https://www.instagram.com/flowcase.hr/"
-              quote="Sa Zoe Rico je suradnja uvijek jednostavna i brza! Dogovor je lak, komunikacija odlična, a usluga vrhunska. Preporučujem!"
+              quote="Sa Zoe Rico je suradnja uvijek jednostavna i brza! Dogovor je lak, komunikacija odlična, a usluga vrhunska. Njihov tim je iznimno profesionalan i posvećen detaljima, što se jasno vidi u kvaliteti njihovog rada. Preporučujem svima koji traže pouzdanog partnera za digitalni marketing!"
             />
             <TestimonialCard
               image="/images/clients/naklada_cvrcak_pic.png"
               name="Naklada Cvrčak"
               company="NAKLADA CVRČAK"
               companyUrl="https://www.facebook.com/nakladacvrcak"
-              quote="S tvrtkom Zoe Rico poslujemo dugi niz godina i uvijek smo iznimno zadovoljni suradnjom! Profesionalnost, kvaliteta i pouzdanost na najvišoj razini. Preporučujemo ih svima!"
+              quote="S tvrtkom Zoe Rico poslujemo dugi niz godina i uvijek smo iznimno zadovoljni suradnjom! Profesionalnost, kvaliteta i pouzdanost na najvišoj razini. Njihov pristup je inovativan, a rezultati koje postižu nadmašuju očekivanja. Preporučujemo ih svima koji žele unaprijediti svoje poslovanje!"
             />
             <TestimonialCard
               image="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80"
@@ -155,51 +155,51 @@ export function Home() {
       {/* Why Choose Agency Section */}
       <section className="py-12 sm:py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-16">
             Zašto odabrati agenciju?
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-white" />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent-gold to-accent-gold/80 rounded-full flex items-center justify-center mb-4">
+                <Users className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Stručnost i iskustvo</h3>
-              <p className="text-neutral">Optimiziramo kampanje s dokazanim rezultatima</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-3 bg-gradient-to-r from-white to-accent-blue bg-clip-text text-transparent">Stručnost i iskustvo</h3>
+              <p className="text-sm sm:text-base text-neutral">Optimiziramo kampanje s dokazanim rezultatima</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
-                <Clock className="h-6 w-6 text-white" />
+            <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent-gold to-accent-gold/80 rounded-full flex items-center justify-center mb-4">
+                <Clock className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Ušteda vremena</h3>
-              <p className="text-neutral">Fokusirajte se na rast vašeg poslovanja</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-3 bg-gradient-to-r from-white to-accent-blue bg-clip-text text-transparent">Ušteda vremena</h3>
+              <p className="text-sm sm:text-base text-neutral">Fokusirajte se na rast vašeg poslovanja</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
-                <MessageCircle className="h-6 w-6 text-white" />
+            <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent-gold to-accent-gold/80 rounded-full flex items-center justify-center mb-4">
+                <MessageCircle className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Konzistentna komunikacija</h3>
-              <p className="text-neutral">Gradimo prepoznatljiv identitet brenda</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-3 bg-gradient-to-r from-white to-accent-blue bg-clip-text text-transparent">Konzistentna komunikacija</h3>
+              <p className="text-sm sm:text-base text-neutral">Gradimo prepoznatljiv identitet brenda</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
-                <BarChart3 className="h-6 w-6 text-white" />
+            <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent-gold to-accent-gold/80 rounded-full flex items-center justify-center mb-4">
+                <BarChart3 className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Napredna analitika</h3>
-              <p className="text-neutral">Pratimo i optimiziramo svaki aspekt</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-3 bg-gradient-to-r from-white to-accent-blue bg-clip-text text-transparent">Napredna analitika</h3>
+              <p className="text-sm sm:text-base text-neutral">Pratimo i optimiziramo svaki aspekt</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
-                <Sparkles className="h-6 w-6 text-white" />
+            <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent-gold to-accent-gold/80 rounded-full flex items-center justify-center mb-4">
+                <Sparkles className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Kreativna rješenja</h3>
-              <p className="text-neutral">Jedinstveni pristup vašem brendu</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-3 bg-gradient-to-r from-white to-accent-blue bg-clip-text text-transparent">Kreativna rješenja</h3>
+              <p className="text-sm sm:text-base text-neutral">Jedinstveni pristup vašem brendu</p>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 bg-accent-blue rounded-xl flex items-center justify-center mb-4">
-                <Heart className="h-6 w-6 text-white" />
+            <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl hover:bg-white/10 transition-colors">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent-gold to-accent-gold/80 rounded-full flex items-center justify-center mb-4">
+                <Heart className="h-5 w-5 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Veća angažiranost</h3>
-              <p className="text-neutral">Stvaramo sadržaj koji povezuje i inspirira</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-3 bg-gradient-to-r from-white to-accent-blue bg-clip-text text-transparent">Veća angažiranost</h3>
+              <p className="text-sm sm:text-base text-neutral">Stvaramo sadržaj koji povezuje i inspirira</p>
             </div>
           </div>
         </div>

@@ -72,6 +72,11 @@ export function About() {
       {/* Matea Section */}
       <section className="bg-white pb-8">
         <div className="max-w-7xl mx-auto px-4">
+          <div className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary">
+              Upoznajte našu vizionarku
+            </h2>
+          </div>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 max-w-4xl mx-auto">
             <div className="w-48 flex flex-col items-center">
               <img 
@@ -85,7 +90,7 @@ export function About() {
               </div>
             </div>
             <div className="flex-1 text-lg text-primary/80 leading-relaxed mt-4 md:mt-12">
-              Većina ljudi danas je na mobitelima i računalima, a digitalni trag ključan je za svaki brend. Zato volim stvarati sadržaj koji privlači pažnju, gradi prepoznatljivost i stvara lojalnu mrežu klijenata
+              Većina ljudi danas je na mobitelima i računalima, a digitalni trag ključan je za svaki brend. Zato volim stvarati sadržaj koji privlači pažnju, gradi prepoznatljivost i stvara lojalnu mrežu klijenata.
             </div>
           </div>
         </div>
