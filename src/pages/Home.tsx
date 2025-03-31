@@ -93,7 +93,7 @@ export function Home() {
               name="Marta Špoljarić"
               company="FLOW CASE"
               companyUrl="https://www.instagram.com/flowcase.hr/"
-              quote="Sa Zoe Rico je suradnja uvijek jednostavna i brza! Dogovor je lak, komunikacija odlična, a usluga vrhunska. Njihov tim je iznimno profesionalan i posvećen detaljima, što se jasno vidi u kvaliteti njihovog rada. Preporučujem svima koji traže pouzdanog partnera za digitalni marketing!"
+              quote="Sa Zoe Rico je suradnja uvijek jednostavna i brza! ⚡️ Dogovor je lak, komunikacija odlična, a usluga vrhunska. Njihov tim je iznimno profesionalan i posvećen detaljima, što se jasno vidi u kvaliteti njihovog rada. Preporučujem svima koji traže pouzdanog partnera za digitalni marketing! ❤️"
             />
             <TestimonialCard
               image="/images/clients/naklada_cvrcak_pic.png"

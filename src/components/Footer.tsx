@@ -87,7 +87,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-neutral/20 mt-12 pt-8 text-center text-neutral">
-          <p>© 2024 ZOE RICO. Sva prava pridržana.</p>
+          <p>© 2025 ZOE RICO. Sva prava pridržana.</p>
         </div>
       </div>
     </footer>
