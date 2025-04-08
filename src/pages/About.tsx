@@ -113,7 +113,7 @@ export function About() {
                 </div>
               </div>
               <div className="mt-6 text-center">
-                <h3 className="text-2xl font-bold text-primary">Antonio Jukić</h3>
+                <h3 className="text-2xl font-bold text-primary">Antonio Leskur</h3>
                 <p className="text-accent-blue font-medium mt-1">Software Developer</p>
               </div>
               <div className="mt-4 text-base text-primary/80 leading-relaxed text-center max-w-sm">
