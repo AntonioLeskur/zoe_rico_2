@@ -69,28 +69,56 @@ export function About() {
         </div>
       </section>
 
-      {/* Matea Section */}
+      {/* Team Section */}
       <section className="bg-white pb-16 pt-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-center text-primary">
-              Upoznajte našu vizionarku
+              Upoznajte naš tim
             </h2>
           </div>
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8 max-w-4xl mx-auto">
-            <div className="w-48 flex flex-col items-center">
-              <img 
-                src="/images/matea/matea_solo_img.jpg"
-                alt="Matea Jukić"
-                className="w-full rounded-2xl"
-              />
-              <div className="mt-4 text-center">
-                <h3 className="text-xl font-bold text-primary">Matea Jukić</h3>
-                <p className="text-primary/70">MBA Marketing</p>
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 max-w-5xl mx-auto">
+            <div className="flex flex-col items-center">
+              <div className="relative">
+                <div className="w-48 h-48 sm:w-56 sm:h-56 overflow-hidden rounded-full border-4 border-accent-blue/20 shadow-xl">
+                  <img 
+                    src="/images/matea/matea_solo_img.jpg"
+                    alt="Matea Jukić"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-accent-blue text-white px-4 py-1 rounded-full text-sm">
+                  CEO
+                </div>
+              </div>
+              <div className="mt-6 text-center">
+                <h3 className="text-2xl font-bold text-primary">Matea Jukić</h3>
+                <p className="text-accent-blue font-medium mt-1">MBA Marketing</p>
+              </div>
+              <div className="mt-4 text-base text-primary/80 leading-relaxed text-center max-w-sm">
+                Većina ljudi danas je na mobitelima i računalima, a digitalni trag ključan je za svaki brend. Zato volim stvarati sadržaj koji privlači pažnju, gradi prepoznatljivost i stvara lojalnu mrežu klijenata.
               </div>
             </div>
-            <div className="flex-1 text-lg text-primary/80 leading-relaxed mt-4 md:mt-12">
-              Većina ljudi danas je na mobitelima i računalima, a digitalni trag ključan je za svaki brend. Zato volim stvarati sadržaj koji privlači pažnju, gradi prepoznatljivost i stvara lojalnu mrežu klijenata.
+            <div className="flex flex-col items-center">
+              <div className="relative">
+                <div className="w-48 h-48 sm:w-56 sm:h-56 overflow-hidden rounded-full border-4 border-accent-blue/20 shadow-xl">
+                  <img 
+                    src="/images/antonio/antonio_zoe_web.jpg"
+                    alt="Antonio Jukić"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-accent-blue text-white px-4 py-1 rounded-full text-sm">
+                  CTO
+                </div>
+              </div>
+              <div className="mt-6 text-center">
+                <h3 className="text-2xl font-bold text-primary">Antonio Jukić</h3>
+                <p className="text-accent-blue font-medium mt-1">Software Developer</p>
+              </div>
+              <div className="mt-4 text-base text-primary/80 leading-relaxed text-center max-w-sm">
+                Specijaliziran za razvoj web aplikacija i web trgovina. Stvaram digitalna rješenja koja kombiniraju funkcionalnost s izvrsnim korisničkim iskustvom.
+              </div>
             </div>
           </div>
         </div>
